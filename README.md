@@ -1,4 +1,4 @@
-A clone of Microsoft To Do application using React w/ Typescript
+*A clone of Microsoft To Do application using React w/ Typescript*
 
 # Getting Started with Create React App
 
