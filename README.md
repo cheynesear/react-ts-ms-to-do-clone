@@ -1,3 +1,5 @@
+*A clone of Microsoft To Do application using React w/ Typescript*
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
