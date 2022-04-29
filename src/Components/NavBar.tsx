@@ -1,4 +1,7 @@
 import React from 'react';
+import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 
 //Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,7 +16,7 @@ import {
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 
-function SideBar() {
+function NavBar() {
     return (
       <div className="side-bar">
       {/* SIDE BAR */}
@@ -40,10 +43,10 @@ function SideBar() {
                 Two spaces gap: &ensp;
                 Four spaces gap: &emsp; */}
               <li>
-                <FontAwesomeIcon icon={faSun} /> &ensp; My Day
+                <FontAwesomeIcon icon={faSun} /> &ensp; <NavLink to="/">My Day</NavLink>
               </li>
               <li>
-                <FontAwesomeIcon icon={faCalendar} /> &ensp; Planned
+                <FontAwesomeIcon icon={faCalendar} /> &ensp; <NavLink to="planned">Planned</NavLink>
               </li>
               <li>
                 <FontAwesomeIcon icon={faInfinity} /> &nbsp; All
@@ -77,4 +80,4 @@ function SideBar() {
     );
   };
 
-export default SideBar;
+export default NavBar;
