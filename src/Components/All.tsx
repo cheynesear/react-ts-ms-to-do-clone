@@ -1,8 +1,11 @@
-import React from 'react';
+import React from "react";
+import "../App.css";
 
-function All() {
+function All () {
     return (
-        null
+        <div>
+            All
+        </div>
     )
 }
 

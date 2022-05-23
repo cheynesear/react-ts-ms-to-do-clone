@@ -1,8 +1,11 @@
-import React from 'react';
+import React from "react";
+import "../App.css";
 
-function FlaggedEmail() {
+function FlaggedEmail () {
     return (
-        null
+        <div>
+            Flagged Email
+        </div>
     )
 }
 

@@ -12,7 +12,7 @@ div {
   white-space:pre-line;
 } 
 
-.side-bar {
+.nav-bar {
   color: white;
   font-size: 0.9rem;
   display: flex;
@@ -25,7 +25,7 @@ div {
   height: 100vh;
 }
 
-.side-bar .container {
+.nav-bar .container {
   margin: 0.35rem 1.5rem;
 }
 
@@ -37,10 +37,24 @@ div {
   margin-top: 0.5rem;
 }
 
-.side-bar ul {
+.nav-bar ul {
   list-style: none;
+  text-decoration: none;
   margin: 0;
   padding: 0;
+}
+
+
+.nav-bar-link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar-link-active {
+  text-decoration: none;
+  color: white;
+  background-color: grey;
+  padding: 3px;
 }
 
 /* Search Bar */
@@ -104,7 +118,7 @@ hr {
 }
 
 /* add gap in list - if not the last item apply margin */
-.side-bar li:not(:last-child) {
+.nav-bar li:not(:last-child) {
     margin-bottom: 0.75rem;
 }
 
@@ -120,8 +134,19 @@ hr {
 }
 
 .new-list {
+  color: white;
   position: fixed;
   bottom: 0;
   margin: 10px 20px;
   font-weight: 500;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0.5rem
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 0.5rem
 }
