@@ -12,6 +12,14 @@ div {
   white-space:pre-line;
 } 
 
+.container-column {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
 .nav-bar {
   color: white;
   font-size: 0.9rem;
@@ -26,15 +34,8 @@ div {
 }
 
 .nav-bar .container {
-  margin: 0.35rem 1.5rem;
-}
-
-.container-column {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .nav-bar ul {
@@ -42,19 +43,34 @@ div {
   text-decoration: none;
   margin: 0;
   padding: 0;
+  /* border: 5px solid blue; */
 }
 
+.nav-bar li {
+  /* border: 1px solid red; */
+}
+
+/* add gap in list - if not the last item apply margin */
+.nav-bar li:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
 
 .nav-bar-link {
   text-decoration: none;
   color: white;
+  margin-left: 1rem;
 }
 
 .nav-bar-link-active {
   text-decoration: none;
   color: white;
   background-color: grey;
-  padding: 3px;
+  background-size: contain;
+  display: inline-block;
+  width: 100%;
+  text-indent: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
 }
 
 /* Search Bar */
@@ -117,11 +133,6 @@ hr {
   color: rgb(155, 155, 155)
 }
 
-/* add gap in list - if not the last item apply margin */
-.nav-bar li:not(:last-child) {
-    margin-bottom: 0.75rem;
-}
-
 .acc-circle {
   width: 30px;
   height: 30px;
@@ -142,11 +153,28 @@ hr {
 }
 
 h1 {
-  font-size: 2rem;
-  margin: 0.5rem
+  font-size: 1.8rem;
+  margin: 2rem 1rem;
+  position: absolute;
+  color: white;
 }
 
 h2 {
-  font-size: 1rem;
-  margin: 0.5rem
+  font-size: 0.85rem;
+  margin: 4.1rem 1.25rem;
+  position: absolute;
+  color: white;
+}
+
+.main-content {}
+
+
+.main-content .myDay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: url('./Static/Images/background-MyDay.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: auto;
+  padding: 0;
 }

@@ -27,6 +27,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      
         <div className="nav-bar">
           {/* SIDE BAR */}
           {/* container 1: header */}
@@ -117,7 +118,7 @@ function App() {
             </ul>
           </div>
           {/* container 4: horizontal line */}
-          <div className="container">
+          <div>
             <hr />
           </div>
           {/* container 5: task lists */}
@@ -125,7 +126,7 @@ function App() {
             <ul>
               <li>
                 <FontAwesomeIcon style={{ color: "#788CDE" }} icon={faList} />{" "}
-                &nbsp; Untiled List
+                &nbsp; Untitled List
               </li>
             </ul>
           </div>
@@ -136,6 +137,7 @@ function App() {
         </div>
 
         <div className="main-content">
+
           <Routes>
             <Route index element={<MyDay />}></Route>
             <Route path="myday" element={<MyDay />}></Route>
@@ -145,6 +147,7 @@ function App() {
             <Route path="tasks" element={<Tasks />}></Route>
           </Routes>
         </div>
+
       </BrowserRouter>
     </div>
   );

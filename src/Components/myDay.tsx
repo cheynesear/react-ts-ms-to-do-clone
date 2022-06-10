@@ -29,7 +29,7 @@ const monthNames = [
 ];
 
 function convertDate(day: number, date: number, month: number) {
-  return `${dayNames[day - 1]}, ${date} ${monthNames[month - 1]}`;
+  return `${dayNames[day - 1]}, ${date} ${monthNames[month]}`;
 }
 
 const date = new Date();
@@ -41,12 +41,10 @@ console.log(convertDate(dDay, dDate, dMonth));
 
 function MyDay() {
   return (
-    <div style={{ backgroundImage: `url(${backgroundImage})` }}>
-      <div>
+      <div className="myDay">
         <h1>My Day</h1>
         <h2>{convertDate(dDay, dDate, dMonth)}</h2>
       </div>
-    </div>
   );
 }
 
