@@ -122,7 +122,7 @@ function App() {
             <hr />
           </div>
           {/* container 5: task lists */}
-          <div className="container">
+          <div className="container custom-lists">
             <ul>
               <li>
                 <FontAwesomeIcon style={{ color: "#788CDE" }} icon={faList} />{" "}

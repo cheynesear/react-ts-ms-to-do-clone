@@ -38,6 +38,10 @@ div {
   margin-bottom: 0.75rem;
 }
 
+.nav-bar .custom-lists {
+  margin: 1rem;
+}
+
 .nav-bar ul {
   list-style: none;
   text-decoration: none;
@@ -59,6 +63,9 @@ div {
   text-decoration: none;
   color: white;
   margin-left: 1rem;
+  text-indent: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
 }
 
 .nav-bar-link-active {
@@ -74,7 +81,6 @@ div {
 }
 
 /* Search Bar */
-
 .search-bar {
   margin: 10px;
 }
@@ -115,9 +121,7 @@ input[type="search"]:focus {
   /* border: 0.2rem solid #3C78A3; */
   outline: none;
 }
-
 /* Search Bar end*/
-
 
 hr {
   width: 100%;
@@ -166,10 +170,12 @@ h2 {
   color: white;
 }
 
-.main-content {}
+.main-content {
+  width: 80%;
+}
 
 
-.main-content .myDay {
+.main-content .my-day {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -177,4 +183,73 @@ h2 {
   background-size: cover;
   margin: auto;
   padding: 0;
+}
+
+.main-content .planned, .all, .flagged-email, .tasks{
+  background: #1E1E1E;
+  width: 100vw;
+  height: 100vh;
+}
+
+.my-day .add-a-task-bar {
+  position: fixed;
+  bottom: 0;
+  margin: 5px;
+  width: 82vw;
+  height: 30px;
+}
+
+.planned h1 {
+  color: #8BD3CE;
+}
+
+.all h1 {
+  color: #FFE1BB;
+}
+
+.flagged-email h1 {
+  color: #F5B5C2;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks h1 {
+  color: #788CDE;
+  position: relative;
+}
+
+.task-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 2.5rem;
+  width: 89%;
+  background-color:#323232;
+  border-radius: 0.1rem;
+  margin-top: 0.05rem;
+  margin-bottom: 0.07rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.task-card-check {
+  height: 1rem;
+  width: 1rem;
+  margin-left: 0.75rem;
+  background-color: none;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.125rem;
+  border-color: #9B9B9B;
+  display: inline-block;
+}
+
+.task-card p {
+  font-size: 0.8rem;
+  color: white;
+  display: inline-block;
+  margin-left: 0.75rem;
 }

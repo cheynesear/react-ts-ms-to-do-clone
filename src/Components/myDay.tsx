@@ -41,9 +41,15 @@ console.log(convertDate(dDay, dDate, dMonth));
 
 function MyDay() {
   return (
-      <div className="myDay">
+      <div className="my-day">
         <h1>My Day</h1>
         <h2>{convertDate(dDay, dDate, dMonth)}</h2>
+        <div className="add-a-task-bar">
+            <form action="">
+              {/* <FontAwesomeIcon icon={faSearch} /> */}
+              <input type="search" placeholder="Search" />
+            </form>
+          </div>
       </div>
   );
 }

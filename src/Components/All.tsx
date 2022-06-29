@@ -3,9 +3,9 @@ import "../App.css";
 
 function All () {
     return (
-        <div>
-            All
-        </div>
+        <div className="all">
+        <h1>All</h1>
+      </div>
     )
 }
 
